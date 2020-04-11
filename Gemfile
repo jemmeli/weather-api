@@ -25,7 +25,17 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
+
+
+#add JWT
+#bundle exec rails g model User email password_digest
+#User.create(email: "jemmeli84@gmail.com", password: "password", password_confirmation: "password")
+gem 'knock'
+#bundle exec rails generate knock:install
+#bundle exec rails generate knock:token_controller user
+
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
